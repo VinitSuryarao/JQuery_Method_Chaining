@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title> JQuery Test  </title>
+   <style>
+      #bdy{
+         background-color: palegreen;
+         position: relative;
+         border: 1px solid black;
+      }
+   </style>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type = "text/javascript">
+
+		    // ready func call when document is ready to render
+         $(document).ready(function() 
+         {     
+               // Methods Chaining
+               $('#btnAnimate').click(function(){
+                  $('#bdy').css('color','red').slideUp().slideDown();
+               });
+               
+         });
+     </script>
+<head>
+   <body>
+   <div id="bdy">
+      <h1> JQuery Information</h1>
+      <p>jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.</p>
+   </div>
+   <button id="btnAnimate"> Animate </button> 
+</body>
+</html>
